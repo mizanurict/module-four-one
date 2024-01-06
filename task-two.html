@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback form</title>
+    <style>
+        header nav > ul{
+            display: flex;
+            position: relative;
+        }
+        .menu li{
+            margin-left: 20px;
+            list-style: none;
+        }
+        li >a{
+            text-decoration: none;
+            color: black;
+        }
+        .menu li >ul{
+            display: none;
+        }
+        .menu a:hover{
+            background-color: aqua;
+        }
+        .menu li:hover ul{
+            display: block;
+            position: absolute;
+            padding-left: 10px;
+            background-color: azure;
+        }
+        footer{
+            margin-top: 20px;
+        }
+        .form{
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header class="menu">
+      <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Form</a></li>
+                </ul>
+            </a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Form</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+        <fieldset>
+            <legend>Feedback form</legend>
+            <form class="form">
+                <label for="name">Name: 
+                    <input type="text" id="name">
+                </label> <br>
+                <label for="story">share your story: <br>
+                    <textarea name="story" id="" cols="50" rows="10"></textarea>
+                </label> <br>
+                <label for="mark">Select your option:
+                    <select name="mark" id="">
+                        <option value="good">Good</option>
+                        <option value="excellent">Excellent</option>
+                    </select>
+                </label> <br>
+                <input type="submit" value="submit">
+            </form>
+        </fieldset>
+        
+    </main>
+    <footer>&copy; 2024. All right reserved</footer>
+</body>
+</html>
